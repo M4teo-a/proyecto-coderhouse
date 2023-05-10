@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;700;900&family=Sedgwick+Ave+Display&display=swap');
+/*-------HEADER-------*/
+ul{
+    margin: 0px 0px 0px 25px;
+    padding: 0px 0px 0px 0px;
+}
+header{
+    background-color: #ff8868;
+    height: 65px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: sticky; 
+    top: 0px;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: -10px 20px 15px 0px;
+}
+header h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans';
+}
+/*-------MAIN-------*/
+main{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Noto Sans';
+    margin-left: 0px;
+    margin-top: 0px;
+}
+main h2{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+main h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 45px;
+}
+main p{
+    padding: 20px;
+}
+body main div{
+    text-align: center;
+}
+.hero a{
+    margin: 20px;
+}
+.hero p{
+    margin: 20px;
+}
+.acercaDeNosotros p{
+    font-size: 16px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*-------FOOTER--------*/
+footer{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Noto Sans';
+}
+footer div{
+    text-align: center;
+}
+footer div a img{
+    margin-left: 10px;
+}
+.hero p{
+    
+    font-size: 40px;
+    margin: 0px 10px 20px 10px;
+}
+section {
+    color: rgb(0, 0, 0);
+    font-family: 'Noto Sans';
+}
+body header nav ul li h1 a {
+    font-family: 'Sedgwick Ave Display';
+    font-size: 25px;
+}
+body header nav ul li a {
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+/*----------------------------Nuevo-----------------------------*/
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Noto Sans';
+    font-size: 16px;
+}
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+body main section ul li{
+    text-align:justify;
+    font-size: 20px;
+}
+body main section ul p{
+    text-align:justify;
+}
+body main section ul div{
+    text-align: center;
+    padding: 10px;
+}
+body main section ol li{
+    font-size: 16px;
+    font-family: 'Noto Sans';
+}
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #ff8868;
+}
+fieldset:last-of-type {
+    border-bottom: none;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+input, textarea {
+    background-color: rgb(164, 159, 159);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #ff8868;
+    border-color: #ff8868;
+    min-width: 300px;
+}
+input[type="file"] {
+    padding: 1px 2px;
+}
+.parent {
+    background: rgb(255, 217, 173);
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    color: black;
+}
+.item {
+    background: #f8caab;
+    font-size: 30px;
+    color: #fff;
+}
+body main ol li{
+    text-align: justify;
+    margin: 20px;
+}
+main {
+    text-align: center;
+}
+/*--------------------Flexbox--------------------*/
+.flexFooter{
+    display: flex;
+    text-align: justify;
+    margin: 20px;
+    
+}
+.imgFlex{
+    align-items: center;
+    justify-content: flex-end;
+}
+/*--------------------Grids--------------------*/
+.sectionGrid{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 150px;
+    justify-content: center;
+}

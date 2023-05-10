@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CatLovers</title>
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><h1><a href="../index.html">CatLovers</a></h1></li>
+                <li><a href="./razas.html">Razas</a></li>
+                <li><a href="./acercadenosotros.html">Acerca de Nosotros</a></li>
+                <li><a href="./contacto.html">Registrarse</a></li> 
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="contacto">
+        <h1>Regístrate!</h1>
+        <p>Por favor, complete todo los campos para finalizar el proceso de registro</p>
+        <form method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+            <label for="first-name">Ingrese su nombre: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Ingrese su apellido: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">Ingrese su correo electrónico: <input id="email" name="email" type="email" required /></label>
+            <label for="new-password">Cree una nueva contraseña: <input id="new-password" name="new-password" type="password"  required /></label>
+        </fieldset>
+        <fieldset>
+            <label for="generocuenta">Escoja su género:</label>
+            <label for="generoCuenta"><input id="masculino" type="radio" name="account-type" class="inline" />  Masculino</label>
+            <label for="generoCuenta"><input id="femenino" type="radio" name="account-type" class="inline" />   Femenino</label>
+            <label for="generoCuenta"><input id="otro" type="radio" name="account-type" class="inline" />    Otro</label>
+        </fieldset>
+        <fieldset>
+            <label for="fotoPerfil">Suba una foto de perfil: <input id="fotoPerfil" type="file" name="imagen" /></label>
+            <label for="edad">Indique su edad (años): <input id="edad" type="number" name="edad" min="13" max="120" /></label>
+            <label for="bio">Elija una biografía: <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Me gustan los gatos"></textarea></label>
+        </fieldset>
+        <fieldset>
+            <label for="terminosYCondiciones">
+                <input id="terminosYCondiciones" type="checkbox" required name="terminosYCondiciones" class="inline" /> Acepto los <a href="">Términos y Condiciones</a>
+            </label>
+        </fieldset>
+        <input type="submit" value="Enviar" />
+        </form>
+    </main>
+    <footer>
+        <div>
+            <br>
+            <a href="https://es-la.facebook.com/" target="blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/" target="blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
+            <a href="https://twitter.com/?lang=es" target="blank"><img src="../img/twitter.png" alt="Logo Twitter"></a>
+        </div>
+    </footer>
+</body>
+</html>
