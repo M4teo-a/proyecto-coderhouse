@@ -1,29 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;700;900&family=Sedgwick+Ave+Display&display=swap');
 /*-------HEADER-------*/
-ul{
-    margin: 0px 0px 0px 25px;
-    padding: 0px 0px 0px 0px;
-}
-header{
-    background-color: #ff8868;
-    height: 65px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    position: sticky; 
-    top: 0px;
-    z-index: 10000;
+    font-family: Arial, Helvetica, sans-serif;
 }
-header nav ul li a{
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ff8868
+}
+
+.logo {
+    max-width: 5rem;
+}
+header img{
+width: 50%;
+height: 50%;
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
     text-decoration: none;
+    color: #1c1c1c;
 }
-header nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin: -10px 20px 15px 0px;
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
-header h1{
-    color: rgb(255, 255, 255);
-    font-family: 'Noto Sans';
+
+@media screen and (max-width: 700px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c
+    }
+
+    .cerrar-menu {
+        color:#ff8868
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax #ff8868
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
 }
 /*-------MAIN-------*/
 main{
@@ -252,19 +312,22 @@ border-radius: .5rem;
 .slider-nav a:hover {
     opacity: 1;
 }
-@media screen and (max-width:500px){/copiado/
+@media screen and (max-width:500px){
     .containerElement{
         width: 95%;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         grid-template-rows: 200px;
     }
-    .containerElement iframe{/copiado/        
+    .containerElement iframe{      
         height: 250px;
         width: 350px;
     }
-    .containerElement img{/copiado/        
+    .containerElement img{    
         height: 250px;
         width: 350px;
+    }
+    h2{
+        font-size: 18px;
     }
 }
